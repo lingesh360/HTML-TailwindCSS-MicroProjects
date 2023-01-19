@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.card-title::after{
+    transform: scaleX(0);
+    transition: transform 500ms ease;
+    transform-origin: left;
+}
+.card:hover .card-title::after{
+    transform: scaleX(1);
+}
+
+.card{
+transition: transform 500ms ease;
+}
+.card:hover{
+    transform: scale(1.05);
+}

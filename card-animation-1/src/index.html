@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Card Animation-Tailwind CSS</title>
+  </head>
+
+  <body class="grid min-h-screen place-items-center leading-7 bg-gray-900">
+    <div
+      class="card text-gray-100 bg-[url('../Wolf-Image.jpg')] bg-cover bg-center pt-72 max-w-sm rounded overflow-hidden card-hover"
+    >
+      <div class="card-content p-4 bg-black/70">
+        <h2
+          class="card-title relative w-max font-bold text-orange-400 mb-1 card-title-after after:content-[''] after:absolute after:h-0.5 after:w-[calc(100%+16px)] after:bg-orange-400 after:-left-4 after:bottom-0"
+        >
+          Wolf Kingdom
+        </h2>
+        <p class="card-body text-sm mb-2">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis,
+          magnam.
+        </p>
+        <a
+          href="#"
+          class="button cursor-pointer text-sm rounded inline-block bg-orange-400 py-0.5 px-2 button-hover-focus hover:bg-gray-100 hover:text-orange-400 focus:bg-gray-100 focus:text-orange-400"
+          >Learn More</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
